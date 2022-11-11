@@ -1,0 +1,11 @@
+services:
+  pybind11-demo:
+    build: .
+    image: pybind11-demo-image:latest
+    container_name: pybind11-demo-container
+    command: /bin/bash
+    volumes:
+      - type: bind
+        source: ./src
+        target: /workspace/pybind11_demo
+    tty: true
