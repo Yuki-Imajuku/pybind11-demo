@@ -10,6 +10,7 @@ __version__ = "0.0.1"
 cppfiles = []
 cppfiles.extend(sorted(glob("src/*.cpp")))
 cppfiles.extend(sorted(glob("src/integer/*.cpp")))
+cppfiles.extend(sorted(glob("src/structure/*.cpp")))
 
 ext_modules = [
     Pybind11Extension(
